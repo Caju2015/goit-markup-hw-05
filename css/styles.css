@@ -574,13 +574,13 @@ address {
     position: absolute;
     top: 24px;
     right: 24px;
-    /* border-radius: 50%; */
+    border-radius: 50%;
 }
 
 .modal-btn-icon {
-    fill: transparent;
-     /* stroke-width: 1px; */
-    stroke: rgba(0, 0, 0, 0.10);
+    fill: none;
+    /* stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.10); */
 }
 
 .modal-title{
@@ -663,4 +663,34 @@ margin-bottom: 16px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+
+.check-text {
+    color: #8E8F99;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.04em;
+display: flex;
+align-items: center;
+}
+
+.check-text a {
+    color:#4D5AE5;
+    text-decoration-line: underline;
+}
+
+.check-text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+height: 16px;
+margin-right: 8px;
+fill: transparent;
+}
+
+.check-input:checked + .check-text span {
+    background-color: #4D5AE5;
+    border: none;
+    fill: #f4f4fd
 }
